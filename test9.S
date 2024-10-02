@@ -14,4 +14,4 @@ loop1:
     bne loop1           // If w1 != 11, branch to loop1
 
 HERE:
-    b HERE              // Infinite loop to prevent exit
+    b HERE
