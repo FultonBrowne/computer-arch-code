@@ -1,7 +1,11 @@
     .global _start
 _start:
-    mov x1, 0x1
-    mov x2, 0x0
+    ldr x0, a
+    ldr x1, b
+    ldr x0, [x0]
+    ldr x1, [x1]
+    //mov x1, 0x1
+    //mov x2, 0x0
     cmp x1, x2
     bgt greater
     b else
